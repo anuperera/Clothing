@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResetPw">
+
+    <ImageView
+        android:id="@+id/imageViewAppIcon"
+        android:layout_width="206dp"
+        android:layout_height="219dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:padding="10dp"
+        android:src="@drawable/shopping_app_logo_1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="346dp"
+        android:layout_height="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="278dp"
+        android:layout_marginEnd="29dp"
+        android:text="Enter your registered mobile number and email below:"
+        android:textColor="#1A99B5"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!--Mobile Number-->
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/editMobile"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginTop="360dp">
+
+        <EditText
+            android:id="@+id/Mobile2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile Number (10 digits)"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Email-->
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/emailTil"
+
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginTop="430dp">
+
+        <EditText
+            android:id="@+id/emailEt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="email"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Next Button-->
+    <Button
+        android:id="@+id/NextBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="505dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="29dp"
+        android:text="Next"
+        app:backgroundTint="#1A99B5"
+        tools:ignore="HardcodedText" />
+
+
+</RelativeLayout>
