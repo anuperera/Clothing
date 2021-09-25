@@ -17,6 +17,10 @@ class ResetPw : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_reset_pw)
 
+        // To show back button in actionbar
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        //actionBar!!.title = "Reset Password"
+
         viewInitializations()
         validateInput()
 
@@ -27,15 +31,25 @@ class ResetPw : AppCompatActivity() {
                 val intent = Intent(this, OTP::class.java)
                 startActivity(intent)
             }
+            else
+            {
+                Toast.makeText(this, "please fill all the required fields", Toast.LENGTH_SHORT).show()
+            }
         }
+    }
+
+    //back button
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 
     private fun viewInitializations() {
         emailEt = findViewById(R.id.emailEt3)
         etMobile = findViewById(R.id.Mobile2)
 
-        // To show back button in actionbar
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+
     }
 
     private fun validateInput(): Boolean {
@@ -52,6 +66,15 @@ class ResetPw : AppCompatActivity() {
             emailEt.error = "Please Enter Valid Email"
             return false
         }
+        // checking minimum mobile number Length
+        val MIN_MOBILE_LENGTH = 9;
+
+        if (etMobile.text.length <= MIN_MOBILE_LENGTH) {
+                etMobile.error =
+                    "Not a valid mobile number"
+                return false
+            }
+
         return true
     }
 

@@ -1,9 +1,9 @@
 package com.app.clothing
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -18,12 +18,18 @@ class SignUp : AppCompatActivity() {
     lateinit var etRepeatPassword: EditText
     lateinit var etAddress: EditText
     val MIN_PASSWORD_LENGTH = 6;
+    val MIN_MOBILE_LENGTH = 9;
+
 
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+
 
         viewInitializations()
         validateInput()
@@ -36,8 +42,18 @@ class SignUp : AppCompatActivity() {
                 val intent = Intent(this, LoginActivity::class.java)
                 startActivity(intent)
             }
+            else
+            {
+                Toast.makeText(this, "please fill all the required fields", Toast.LENGTH_SHORT).show()
+            }
         }
 
+    }
+
+    //back button
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 
 
@@ -50,8 +66,10 @@ class SignUp : AppCompatActivity() {
             passwordEt = findViewById(R.id.passwordEt)
             etRepeatPassword = findViewById(R.id.ConfirmEt)
             // To show back button in actionbar
-            supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        }
+
+
+
+         }
 
         // Checking if the input in form is valid
         private fun validateInput(): Boolean {
@@ -93,6 +111,13 @@ class SignUp : AppCompatActivity() {
                     "Password Length must be more than " + MIN_PASSWORD_LENGTH + "characters"
                 return false
             }
+            // checking minimum mobile number Length
+            if (etMobile.text.length <= MIN_MOBILE_LENGTH) {
+                etMobile.error =
+                    "Not a valid mobile number"
+                return false
+            }
+
             // Checking if repeat password is same
             if (passwordEt.text.toString() != etRepeatPassword.text.toString()) {
                 etRepeatPassword.error = "Password does not match"

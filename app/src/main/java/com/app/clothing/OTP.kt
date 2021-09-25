@@ -29,6 +29,10 @@ class OTP : AppCompatActivity() {
                 val intent = Intent(this, LoginActivity::class.java)
                 startActivity(intent)
             }
+            else
+            {
+                Toast.makeText(this, "please fill all the required fields", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 
@@ -39,26 +43,26 @@ class OTP : AppCompatActivity() {
         etRepeatPassword= findViewById(R.id.ConfirmEt)
     }
     private fun validateInput(): Boolean {
-        if (etOTP.text.toString().equals("")) {
-            etOTP.setError("Please Enter the OTP")
+        if (etOTP.text.toString() == "") {
+            etOTP.error = "Please Enter the OTP"
             return false
         }
-        if (etPassword.text.toString().equals("")) {
-            etPassword.setError("Please Enter Password")
+        if (etPassword.text.toString() == "") {
+            etPassword.error = "Please Enter Password"
             return false
         }
-        if (etRepeatPassword.text.toString().equals("")) {
-            etRepeatPassword.setError("Please Enter Repeat Password")
+        if (etRepeatPassword.text.toString() == "") {
+            etRepeatPassword.error = "Please Enter Repeat Password"
             return false
         }
         // checking minimum password Length
         if (etPassword.text.length < MIN_PASSWORD_LENGTH) {
-            etPassword.setError("Password Length must be more than " + MIN_PASSWORD_LENGTH + "characters")
+            etPassword.error = "Password Length must be more than " + MIN_PASSWORD_LENGTH + "characters"
             return false
         }
         // Checking if repeat password is same
-        if (!etPassword.text.toString().equals(etRepeatPassword.text.toString())) {
-            etRepeatPassword.setError("Password does not match")
+        if (etPassword.text.toString() != etRepeatPassword.text.toString()) {
+            etRepeatPassword.error = "Password does not match"
             return false
         }
         return true

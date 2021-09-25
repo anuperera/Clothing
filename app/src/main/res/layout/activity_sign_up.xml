@@ -7,25 +7,25 @@
     tools:context=".SignUp">
 
 
+    <!--Name-->
+
     <TextView
         android:id="@+id/textView"
-        android:layout_width="352dp"
-        android:layout_height="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="29dp"
-        android:layout_marginEnd="29dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="0dp"
         android:background="#B7D7F5"
-        android:text="Rgister Yourself"
         android:padding="12dp"
+        android:text="Rgister Yourself"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="20sp" />
 
-
-
-
-    <!--Name-->
     <com.google.android.material.textfield.TextInputLayout
 
         android:id="@+id/editTextName"

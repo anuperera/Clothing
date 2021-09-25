@@ -6,26 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
+
+    <!--Email-->
+
     <ImageView
         android:id="@+id/imageViewAppIcon"
         android:layout_width="206dp"
         android:layout_height="219dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/emailTil"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="20dp"
         android:padding="10dp"
         android:src="@drawable/shopping_app_logo_1" />
 
-
-    <!--Email-->
     <com.google.android.material.textfield.TextInputLayout
 
         android:id="@+id/emailTil"
-        android:layout_above="@id/passwordTil"
-        android:layout_marginBottom="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@id/passwordTil"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginStart="29dp"
-        android:layout_marginEnd="29dp">
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="15dp">
 
         <EditText
             android:id="@+id/emailEt"
@@ -40,12 +48,14 @@
     <!--Password-->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/passwordTil"
-        app:passwordToggleEnabled ="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
         android:layout_marginStart="29dp"
-        android:layout_marginEnd="29dp">
+        android:layout_marginEnd="28dp"
+        app:passwordToggleEnabled="true">
 
         <EditText
             android:id="@+id/passwordEt"
@@ -63,36 +73,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/passwordTil"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="29dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
         android:text="login"
         app:backgroundTint="#1A99B5"
-        android:layout_marginStart="29dp"
-        android:layout_marginEnd="29dp"
         tools:ignore="HardcodedText" />
 
-    <!--forgot password-->
 
-    <!--sign up-->
 
-    <Button
-        android:id="@+id/forgotPw"
-        style="@style/TextAppearance.MaterialComponents.Caption"
-        android:layout_width="175dp"
-        android:layout_height="47dp"
-        android:layout_alignTop="@+id/LoginBtn"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="41dp"
-        android:layout_marginEnd="118dp"
-        android:layout_marginBottom="228dp"
-        android:background="@android:color/transparent"
-        android:padding="10dp"
-        android:text="forgot_password"
-        android:textColor="#1A99B5"
-        android:visibility="visible"
-        tools:ignore="HardcodedText" />
-
+    <!--SignUp-->
     <TextView
         android:id="@+id/noAccountTv"
         style="@style/TextAppearance.MaterialComponents.Caption"
@@ -100,11 +92,14 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="92dp"
+        android:layout_marginStart="99dp"
         android:layout_marginBottom="8dp"
         android:padding="10dp"
         android:text="Don’t have an account?"
         android:textColor="#1A99B5" />
+
+    <!--forgot pw-->
+
 
     <Button
         android:id="@+id/bt_signup"
@@ -113,8 +108,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="105dp"
-        android:layout_marginBottom="1dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="2dp"
         android:background="@android:color/transparent"
         android:text="Sign Up"
         android:textAllCaps="false"
@@ -122,5 +117,17 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/forgotPw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="155dp"
+        android:background="@android:color/transparent"
+        android:text="Fogot password?"
+        android:textColor="#1A99B5"
+        android:textSize="10sp" />
 
 </RelativeLayout>

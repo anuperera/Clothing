@@ -7,6 +7,7 @@ import android.util.Patterns
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import java.util.regex.Pattern
 
 class LoginActivity : AppCompatActivity() {
     lateinit var etEmail: EditText
@@ -20,10 +21,17 @@ class LoginActivity : AppCompatActivity() {
         viewInitializations()
         validateInput()
 
+
         val login = findViewById<Button>(R.id.LoginBtn)
         // set on-click listener
         login.setOnClickListener {
-            Toast.makeText(this, "Login Success", Toast.LENGTH_SHORT).show()
+            if (validateInput()) {
+                Toast.makeText(this, "Login Success", Toast.LENGTH_SHORT).show()
+            }
+            else
+            {
+                android.widget.Toast.makeText(this, "Please enter valid credentials", android.widget.Toast.LENGTH_SHORT).show()
+            }
         }
         val signup = findViewById<Button>(R.id.bt_signup)
         // set on-click listener
@@ -62,6 +70,7 @@ class LoginActivity : AppCompatActivity() {
             etEmail.error = "Please Enter a Valid Email"
             return false
         }
+
         // checking minimum password Length
         if (etPassword.text.length < MIN_PASSWORD_LENGTH) {
             etPassword.error = "Password Length must be more than " + MIN_PASSWORD_LENGTH + "characters"
