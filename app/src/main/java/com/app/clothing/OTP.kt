@@ -1,11 +1,11 @@
 package com.app.clothing
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.Toast
+import android.view.animation.AnimationUtils
+import android.widget.*
 
 class OTP : AppCompatActivity() {
 
@@ -14,14 +14,29 @@ class OTP : AppCompatActivity() {
     lateinit var etRepeatPassword: EditText
     val MIN_PASSWORD_LENGTH = 6;
 
+    @SuppressLint("CutPasteId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_otp)
 
+        val ttp = AnimationUtils.loadAnimation(this,R.anim.ttp)
+        val header = findViewById<ImageView>(R.id.imageViewAppIcon)
+
+        val stb = AnimationUtils.loadAnimation(this,R.anim.stb)
+        val bt = findViewById<ImageButton>(R.id.SubBtn)
+        val tx = findViewById<TextView>(R.id.textView6)
+        val tx2 = findViewById<TextView>(R.id.textView5)
+
+        //set anim
+        header.startAnimation(ttp)
+        bt.startAnimation(stb)
+        tx.startAnimation(stb)
+        tx2.startAnimation(stb)
+
         viewInitializations()
         validateInput()
 
-        val submit = findViewById<Button>(R.id.SubBtn)
+        val submit = findViewById<ImageButton>(R.id.SubBtn)
         // set on-click listener
         submit.setOnClickListener {
             if (validateInput()) {

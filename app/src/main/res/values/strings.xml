@@ -1,3 +1,46 @@
 <resources>
-    <string name="app_name">Clothing</string>
+    <string name="app_name">Trendy</string>
+    <string name="image_back">Image background</string>
+    <string name="order_placed">Your order has been successfully placed!</string>
+    <string name="slogan_1">Cherish the way you sparkle!!!</string>
+    <string name="OK">OK</string>
+    <string name="Add">ADD</string>
+    <string name="Remove">Remove</string>
+    <string name="My_cart">My Cart</string>
+    <string name="ordering_from">Ordering From:</string>
+    <string name="dress_name">Dress name</string>
+    <string name="dress_price">Price</string>
+    <string name="prev_orders">My Previous Orders</string>
+    <string name="slogan_2">Your Previous Orders are listed below:</string>
+    <string name="store_name">Store name</string>
+    <string name="date">Date</string>
+
+
+    <string name="Nils_store">Nils Store</string>
+    <string name="Store_2">Nils Store</string>
+    <string name="Store_3">Nils Store</string>
+
+    <string name="date_1">21/09/2021</string>
+    <string name="date_2">24/10/2021</string>
+    <string name="date_3">30/11/2021</string>
+
+    <string name="dress_name_1">name</string>
+    <string name="dress_name_2">name</string>
+    <string name="dress_name_3">name</string>
+    <string name="dress_name_4">name</string>
+    <string name="dress_name_5">name</string>
+    <string name="dress_name_6">name</string>
+    <string name="dress_name_7">name</string>
+    <string name="dress_name_8">name</string>
+    <string name="dress_name_9">name</string>
+    <string name="dress_name_10">name</string>
+    <string name="dress_name_11">name</string>
+    <string name="dress_name_12">name</string>
+
+    <string name="dress_price_1">2000</string>
+    <string name="dress_price_2">2000</string>
+    <string name="dress_price_3">2000</string>
+    <string name="dress_price_4">2000</string>
+    <string name="dress_price_5">2000</string>
+    <string name="dress_price_6">2000</string>
 </resources>

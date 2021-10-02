@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.app.clothing">
 
     <application
@@ -9,16 +10,40 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Clothing">
-        <activity android:name=".OTP" />
-        <activity android:name=".ResetPw" />
-        <activity android:name=".SignUp" />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".KidsStore"></activity>
+        <activity android:name=".MyProfile" />
+        <activity
+            android:name=".SplashScrean"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MimosaStore" />
+        <activity
+            android:name=".MimosaAdapter"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".RecyclerAdapter"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".OrderPlacedActivity" />
+        <activity android:name=".NilsStoreActivity" />
+        <activity android:name=".MyCartActivity2" />
+        <activity android:name=".MyCartActivity" />
+        <activity android:name=".PreviousOrders" />
+        <activity android:name=".NavDrawer" />
+        <activity android:name=".Rating" />
+        <activity android:name=".CostHigh" />
+        <activity android:name=".CostLow" />
+        <activity android:name=".AllStores" />
+        <activity android:name=".SortBy" />
+        <activity android:name=".FAQ" />
+        <activity android:name=".OTP" />
+        <activity android:name=".ResetPw" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".LoginActivity" />
     </application>
 
 </manifest>

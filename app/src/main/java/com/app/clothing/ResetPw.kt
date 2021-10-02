@@ -1,30 +1,45 @@
 package com.app.clothing
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
-import android.widget.Button
-import android.widget.EditText
-import android.widget.Toast
+import android.view.animation.AnimationUtils
+import android.widget.*
 
 class ResetPw : AppCompatActivity() {
 
     lateinit var emailEt: EditText
     lateinit var etMobile: EditText
 
+    @SuppressLint("CutPasteId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_reset_pw)
 
+        val ttp = AnimationUtils.loadAnimation(this,R.anim.ttp)
+        val header = findViewById<ImageView>(R.id.imageViewAppIcon)
+
+        val stb = AnimationUtils.loadAnimation(this,R.anim.stb)
+        val bt = findViewById<ImageButton>(R.id.NextBtn)
+        val tx = findViewById<TextView>(R.id.textView6)
+        val tx2 = findViewById<TextView>(R.id.textView5)
+
+        //set anim
+        header.startAnimation(ttp)
+        bt.startAnimation(stb)
+        tx.startAnimation(stb)
+        tx2.startAnimation(stb)
+
         // To show back button in actionbar
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        //actionBar!!.title = "Reset Password"
+
 
         viewInitializations()
         validateInput()
 
-        val next = findViewById<Button>(R.id.NextBtn)
+        val next = findViewById<ImageButton>(R.id.NextBtn)
         // set on-click listener
         next.setOnClickListener {
             if (validateInput()) {

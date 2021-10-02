@@ -4,9 +4,8 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns
-import android.widget.Button
-import android.widget.EditText
-import android.widget.Toast
+import android.view.animation.AnimationUtils
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 
 class SignUp : AppCompatActivity() {
@@ -23,18 +22,27 @@ class SignUp : AppCompatActivity() {
 
 
 
+    @SuppressLint("CutPasteId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
+        val stb = AnimationUtils.loadAnimation(this,R.anim.stb)
+        val btt = findViewById<ImageButton>(R.id.RegBtn)
+        val btw = findViewById<TextView>(R.id.textView)
+
+
+        btt.startAnimation(stb)
+        btw.startAnimation(stb)
+
 
 
         viewInitializations()
         validateInput()
 
-        val register = findViewById<Button>(R.id.RegBtn)
+        val register = findViewById<ImageButton>(R.id.RegBtn)
         // set on-click listener
         register.setOnClickListener {
             if (validateInput()) {

@@ -1,28 +1,45 @@
 package com.app.clothing
 
+import android.annotation.SuppressLint
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
-import android.widget.Button
-import android.widget.EditText
-import android.widget.Toast
-import java.util.regex.Pattern
+import android.view.animation.AnimationUtils
+import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
+
 
 class LoginActivity : AppCompatActivity() {
     lateinit var etEmail: EditText
     lateinit var etPassword: EditText
     val MIN_PASSWORD_LENGTH = 6
 
+    @SuppressLint("CutPasteId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+
+        val ttp = AnimationUtils.loadAnimation(this,R.anim.ttp)
+        val header = findViewById<ImageView>(R.id.imageViewAppIcon)
+
+        val stb = AnimationUtils.loadAnimation(this,R.anim.stb)
+        val bt = findViewById<ImageButton>(R.id.LoginBtn)
+        val te = findViewById<TextView>(R.id.textView6)
+        val te2 = findViewById<TextView>(R.id.textView5)
+
+
+        //set anim
+        header.startAnimation(ttp)
+        bt.startAnimation(stb)
+        te.startAnimation(stb)
+        te2.startAnimation(stb)
+
 
         viewInitializations()
         validateInput()
 
 
-        val login = findViewById<Button>(R.id.LoginBtn)
+        val login = findViewById<ImageButton>(R.id.LoginBtn)
         // set on-click listener
         login.setOnClickListener {
             if (validateInput()) {
@@ -30,7 +47,7 @@ class LoginActivity : AppCompatActivity() {
             }
             else
             {
-                android.widget.Toast.makeText(this, "Please enter valid credentials", android.widget.Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Please enter valid credentials", Toast.LENGTH_SHORT).show()
             }
         }
         val signup = findViewById<Button>(R.id.bt_signup)
