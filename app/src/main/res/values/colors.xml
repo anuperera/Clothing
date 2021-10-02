@@ -15,4 +15,10 @@
     <color name="dark_sea_blue">#0083B0</color>
     <color name="sky_blue">#a1c4fd</color>
     <color name="light_sky_blue">#c2e9fb</color>
+    <color name="yellow">#FF9A00</color>
+    <color name="pink">#F6DEDE</color>
+    <color name="youtube">#C64141</color>
+    <color name="gray">#f5f5f5</color>
+    <color name="darkGray">#3A3939</color>
+    <color name="hintTextColor">#787878</color>
 </resources>

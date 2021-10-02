@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".PreviousOrders">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/slogan_2"
+        android:textColor="@color/sea_blue"
+        android:textSize="18sp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="14dp"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/light_sky_blue"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Nils_store"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="3dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/date_1"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:layout_marginStart="150dp"
+                        android:layout_marginTop="3dp"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="42dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="10dp"
+                            android:contentDescription="@string/image_back"
+                            android:src="@drawable/minus_btn"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dress_name_1"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="70dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dress_price_1"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="70dp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="42dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="10dp"
+                            android:contentDescription="@string/image_back"
+                            android:src="@drawable/minus_btn"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dress_name_2"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="70dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dress_price_2"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="70dp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="42dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="10dp"
+                            android:contentDescription="@string/image_back"
+                            android:src="@drawable/minus_btn"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dress_name_3"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="70dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dress_price_3"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="70dp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="42dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="10dp"
+                            android:contentDescription="@string/image_back"
+                            android:src="@drawable/minus_btn"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dress_name_4"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="70dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dress_price_4"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="70dp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/light_sky_blue"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Store_2"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="3dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/date_2"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:layout_marginStart="150dp"
+                        android:layout_marginTop="3dp"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="42dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="10dp"
+                            android:contentDescription="@string/image_back"
+                            android:src="@drawable/minus_btn"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dress_name_5"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="70dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dress_price_5"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="70dp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="42dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="10dp"
+                            android:contentDescription="@string/image_back"
+                            android:src="@drawable/minus_btn"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dress_name_6"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="70dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dress_price_2"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="70dp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="42dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="10dp"
+                            android:contentDescription="@string/image_back"
+                            android:src="@drawable/minus_btn"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dress_name_7"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="70dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dress_price_3"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="70dp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="42dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="10dp"
+                            android:contentDescription="@string/image_back"
+                            android:src="@drawable/minus_btn"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dress_name_8"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="70dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dress_price_3"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="70dp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/light_sky_blue"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Store_2"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="3dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/date_3"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:layout_marginStart="150dp"
+                        android:layout_marginTop="3dp"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="42dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="10dp"
+                            android:contentDescription="@string/image_back"
+                            android:src="@drawable/minus_btn"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dress_name_9"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="70dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dress_price_5"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="70dp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="42dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="10dp"
+                            android:contentDescription="@string/image_back"
+                            android:src="@drawable/minus_btn"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dress_name_10"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="70dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dress_price_2"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="70dp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="42dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="10dp"
+                            android:contentDescription="@string/image_back"
+                            android:src="@drawable/minus_btn"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dress_name_11"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="70dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dress_price_3"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="70dp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="42dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="10dp"
+                            android:contentDescription="@string/image_back"
+                            android:src="@drawable/minus_btn"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dress_name_12"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="70dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dress_price_3"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="70dp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
